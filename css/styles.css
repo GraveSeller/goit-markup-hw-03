@@ -29,13 +29,28 @@ body {
 .link {
   text-decoration: none;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 button {
   border: 0;
-  outline: none;
 }
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
   width: 100%;
 }
 /* Header */
@@ -60,6 +75,7 @@ button {
   text-transform: uppercase;
   color: var(--dark);
   padding: 24px 0 24px 0;
+  margin-right: 76px;
 }
 .header-logo-part {
   color: var(--primary-band);
@@ -71,7 +87,8 @@ button {
 .header-list {
   display: flex;
   gap: 40px;
-  padding-left: 76px;
+
+  margin: 0;
 }
 
 .header-link {
@@ -82,12 +99,14 @@ button {
   letter-spacing: 0.02em;
   color: var(--dark);
   text-decoration: none;
+  padding: 24px 0 24px 0;
 }
 
 .header-address-list {
   display: flex;
   gap: 40px;
   padding: 0;
+  margin: 0;
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -100,6 +119,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+  padding: 24px 0 24px 0;
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -112,6 +132,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+  padding: 24px 0 24px 0;
 }
 /* /Header */
 /* Main */
@@ -129,14 +150,10 @@ button {
   width: 100%;
   text-align: center;
 }
-.main-hero-btn:hover,
-.main-hero-btn:focus {
-  background-color: var(--pressed-state);
-}
 
 .main-hero-btn {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text);
@@ -144,14 +161,21 @@ button {
   letter-spacing: 0.04em;
   cursor: pointer;
   border: 0;
-  outline: none;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
 }
+.main-hero-btn:hover,
+.main-hero-btn:focus {
+  background-color: var(--pressed-state);
+}
 /* Dignity */
+.main-dignity {
+  padding-bottom: 120px;
+}
 .dignity-intro {
   display: none;
 }
@@ -167,11 +191,18 @@ button {
 
   margin-bottom: 8px;
 }
+
+.dignity-item {
+  max-width: 264px;
+  width: 100%;
+}
+
 .dignity-text {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 
   color: var(--text);
   width: 100%;
@@ -180,9 +211,7 @@ button {
 
 /* Abilities */
 .main-abilities {
-  margin-bottom: 120px;
-}
-.abilities-container {
+  padding-bottom: 120px;
 }
 
 .abilities-headline {
@@ -196,6 +225,13 @@ button {
 .abilities-list {
   display: flex;
   gap: 24px;
+}
+.abilities-item {
+  max-width: 360px;
+  width: 100%;
+}
+.abilities-img {
+  display: block;
 }
 /* Team */
 .main-team {
@@ -217,12 +253,19 @@ button {
   margin: 0;
   padding: 0;
 }
+
+.team-text--container {
+  padding: 32px 16px;
+}
+
 .team-item {
   background-color: var(--main-bg-color);
   text-align: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  max-width: 264px;
+  width: 100%;
 }
 .team-name {
   font-weight: 500;
@@ -237,6 +280,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--text);
   text-align: center;
+  padding-top: 8px;
 }
 /* /Main */
 
@@ -253,6 +297,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light);
+  display: block;
+  margin-bottom: 16px;
 }
 .footer-logo-part {
   color: var(--primary-band);
@@ -298,30 +344,30 @@ button {
 .row-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   margin: 0;
   padding: 0;
 }
 .row-item {
   max-width: 360px;
   width: 100%;
-  padding-bottom: 32px;
   cursor: pointer;
-  border: 1px solid var(--accent);
 }
+
+.row-text {
+  padding: 32px 0 32px 16px;
+}
+
 .row-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
-  padding-left: 16px;
+  padding-bottom: 8px;
 }
 .row-specification {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-  padding-left: 16px;
-  margin-top: 0;
 }
